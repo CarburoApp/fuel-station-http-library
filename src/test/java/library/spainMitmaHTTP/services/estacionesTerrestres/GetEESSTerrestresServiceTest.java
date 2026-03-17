@@ -26,7 +26,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestre();
 
 		validateBaseResponse(res);
@@ -44,7 +44,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/FiltroCCAA/19", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestreByCCAA(19);
 
 		validateBaseResponse(res);
@@ -56,7 +56,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/FiltroProvincia/52", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestreByProvincia(52);
 
 		validateBaseResponse(res);
@@ -68,7 +68,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/FiltroMunicipio/8111", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestreByMunicipio(8111);
 
 		validateBaseResponse(res);
@@ -84,7 +84,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/FiltroProducto/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestreByProducto(1);
 
 		validateProductoResponse(res);
@@ -95,7 +95,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/FiltroProvinciaProducto/52/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestreByProvinciaAndProducto(52, 1);
 
 		validateProductoResponse(res);
@@ -106,7 +106,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/FiltroCCAAProducto/19/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestreByCCAAAndProducto(19, 1);
 
 		validateProductoResponse(res);
@@ -117,7 +117,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 
 		stubJson("/EstacionesTerrestres/FiltroMunicipioProducto/8111/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresService()
 				.getListadoEstacionDeServicioTerrestreByMunicipioAndProducto(8111, 1);
 
 		validateProductoResponse(res);
@@ -135,7 +135,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 						.withBody("json_invalido")));
 
 		Assertions.assertThrows(SpainMitmaAPIClientException.class,
-								() -> api.getEEESSTerrestresService()
+								() -> api.getEESSTerrestresService()
 										.getListadoEstacionDeServicioTerrestre());
 	}
 
@@ -146,7 +146,7 @@ class GetEESSTerrestresServiceTest extends SpainMitmaAPIClientAbstractTest {
 				aResponse().withStatus(500)));
 
 		Assertions.assertThrows(SpainMitmaAPIClientException.class,
-								() -> api.getEEESSTerrestresService()
+								() -> api.getEESSTerrestresService()
 										.getListadoEstacionDeServicioTerrestre());
 	}
 

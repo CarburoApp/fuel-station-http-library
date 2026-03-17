@@ -56,7 +56,7 @@ En resumen, se puede obtener información detallada de las estaciones, sus preci
 
 - La librería tiene como punto de entrada el **`HTTPClient`**, desde donde se puede seleccionar qué servicios utilizar, ya sea la API MITMA actualmente o cualquier otro cliente HTTP que se integre en el futuro.
 - Cliente HTTP centralizado (`SpainMitmaAPIClientAbstractService`) que gestiona la configuración, las peticiones y la conversión de JSON a objetos DTO.
-- Cada servicio específico encapsula las llamadas a endpoints concretos, por ejemplo `GetEEESSTerrestresHistoricoService` para estaciones históricas.
+- Cada servicio específico encapsula las llamadas a endpoints concretos, por ejemplo `GetEESSTerrestresHistoricoService` para estaciones históricas.
 - Diseñada para ser **ampliable**, permitiendo integrar nuevas APIs nacionales o internacionales sin necesidad de reescribir la lógica base.
 
 ---

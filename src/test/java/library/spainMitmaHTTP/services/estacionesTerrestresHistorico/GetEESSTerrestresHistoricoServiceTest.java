@@ -27,7 +27,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testGetListadoEESSTerrestresHistCompleto() throws Exception {
 		stubJson("/EstacionesTerrestresHist/01-05-2022", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHist(testFecha);
 
 		validateBaseResponse(res);
@@ -44,7 +44,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testFiltroCCAAHist() throws Exception {
 		stubJson("/EstacionesTerrestresHist/FiltroCCAA/01-05-2022/19", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHistByCCAA(testFecha, 19);
 
 		validateBaseResponse(res);
@@ -55,7 +55,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testFiltroProvinciaHist() throws Exception {
 		stubJson("/EstacionesTerrestresHist/FiltroProvincia/01-05-2022/52", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHistByProvincia(testFecha, 52);
 
 		validateBaseResponse(res);
@@ -66,7 +66,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testFiltroMunicipioHist() throws Exception {
 		stubJson("/EstacionesTerrestresHist/FiltroMunicipio/01-05-2022/8111", JSON_BASE);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHistByMunicipio(testFecha, 8111);
 
 		validateBaseResponse(res);
@@ -80,7 +80,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testFiltroProductoHist() throws Exception {
 		stubJson("/EstacionesTerrestresHist/FiltroProducto/01-05-2022/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHistByProducto(testFecha, 1);
 
 		validateProductoResponse(res);
@@ -90,7 +90,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testFiltroProvinciaProductoHist() throws Exception {
 		stubJson("/EstacionesTerrestresHist/FiltroProvinciaProducto/01-05-2022/52/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHistByProvinciaAndProducto(testFecha, 52, 1);
 
 		validateProductoResponse(res);
@@ -100,7 +100,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testFiltroCCAAProductoHist() throws Exception {
 		stubJson("/EstacionesTerrestresHist/FiltroCCAAProducto/01-05-2022/19/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHistByCCAAAndProducto(testFecha, 19, 1);
 
 		validateProductoResponse(res);
@@ -110,7 +110,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 	void testFiltroMunicipioProductoHist() throws Exception {
 		stubJson("/EstacionesTerrestresHist/FiltroMunicipioProducto/01-05-2022/8111/1", JSON_PRODUCTO);
 
-		EstacionDeServicioTerrestreResponseDTO res = api.getEEESSTerrestresHistoricoService()
+		EstacionDeServicioTerrestreResponseDTO res = api.getEESSTerrestresHistoricoService()
 				.getListadoEstacionDeServicioTerrestreHistByMunicipioAndProducto(testFecha, 8111, 1);
 
 		validateProductoResponse(res);
@@ -126,7 +126,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 						.withBody("json_invalido")));
 
 		Assertions.assertThrows(SpainMitmaAPIClientException.class,
-								() -> api.getEEESSTerrestresHistoricoService()
+								() -> api.getEESSTerrestresHistoricoService()
 										.getListadoEstacionDeServicioTerrestreHist(testFecha));
 	}
 
@@ -136,7 +136,7 @@ class GetEESSTerrestresHistoricoServiceTest extends SpainMitmaAPIClientAbstractT
 				aResponse().withStatus(500)));
 
 		Assertions.assertThrows(SpainMitmaAPIClientException.class,
-								() -> api.getEEESSTerrestresHistoricoService()
+								() -> api.getEESSTerrestresHistoricoService()
 										.getListadoEstacionDeServicioTerrestreHist(testFecha));
 	}
 
