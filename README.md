@@ -1,5 +1,28 @@
 # Fuel Stations HTTP Client Library
 
+## 📊 Calidad del Código (SonarCloud)
+
+**Estado General**
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=alert_status&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=ncloc&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+
+**Bugs y Vulnerabilidades**
+
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=reliability_rating&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=bugs)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=vulnerabilities&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=security_rating&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+
+**Cobertura y Mantenibilidad**
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=coverage&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=sqale_rating&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=CarburoApp_fuel-station-http-library&metric=sqale_index&token=d2b061a19fef68eec4e7767962d878aa977ad254)](https://sonarcloud.io/summary/new_code?id=CarburoApp_fuel-station-http-library)
+
+---
+
+
 *Fuel Stations HTTP Client Library* es una librería Java incluida dentro del proyecto *Carburo*, diseñada para facilitar el consumo de servicios REST de precios y estaciones de hidrocarburos. Actualmente, la librería se centra en consumir la API REST proporcionada por el **Ministerio de Transportes, Movilidad y Agenda Urbana (MITMA) de España**, pero está diseñada para poder integrarse con otras APIs, incluso de otros países, en el futuro.
 
 La API oficial se puede consultar en: [PreciosCarburantes REST API](https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes)
