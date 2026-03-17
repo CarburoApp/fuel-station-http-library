@@ -1,0 +1,38 @@
+[
+  {
+	"IDPovincia": "02",
+	"IDCCAA": "07",
+	"Provincia": "ALBACETE",
+	"CCAA": "Castilla la Mancha"
+  },
+  {
+	"IDPovincia": "03",
+	"IDCCAA": "10",
+	"Provincia": "ALICANTE",
+	"CCAA": "Comunidad Valenciana"
+  },
+  {
+	"IDPovincia": "10",
+	"IDCCAA": "11",
+	"Provincia": "CÁCERES",
+	"CCAA": "Extremadura"
+  },
+  {
+	"IDPovincia": "51",
+	"IDCCAA": "18",
+	"Provincia": "CEUTA",
+	"CCAA": "Ceuta"
+  },
+  {
+	"IDPovincia": "17",
+	"IDCCAA": "09",
+	"Provincia": "GIRONA",
+	"CCAA": "Cataluña"
+  },
+  {
+	"IDPovincia": "18",
+	"IDCCAA": "01",
+	"Provincia": "GRANADA",
+	"CCAA": "Andalucia"
+  }
+]

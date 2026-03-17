@@ -1,0 +1,74 @@
+[
+  {
+	"IDMunicipio": "1",
+	"IDProvincia": "01",
+	"IDCCAA": "16",
+	"Municipio": "Alegría-Dulantzi",
+	"Provincia": "ARABA/ÁLAVA",
+	"CCAA": "País Vasco"
+  },
+  {
+	"IDMunicipio": "2",
+	"IDProvincia": "01",
+	"IDCCAA": "16",
+	"Municipio": "Amurrio",
+	"Provincia": "ARABA/ÁLAVA",
+	"CCAA": "País Vasco"
+  },
+  {
+	"IDMunicipio": "3",
+	"IDProvincia": "01",
+	"IDCCAA": "16",
+	"Municipio": "Añana",
+	"Provincia": "ARABA/ÁLAVA",
+	"CCAA": "País Vasco"
+  },
+  {
+	"IDMunicipio": "1798",
+	"IDProvincia": "11",
+	"IDCCAA": "01",
+	"Municipio": "Tarifa",
+	"Provincia": "CÁDIZ",
+	"CCAA": "Andalucia"
+  },
+  {
+	"IDMunicipio": "1799",
+	"IDProvincia": "11",
+	"IDCCAA": "01",
+	"Municipio": "Torre Alháquime",
+	"Provincia": "CÁDIZ",
+	"CCAA": "Andalucia"
+  },
+  {
+	"IDMunicipio": "1800",
+	"IDProvincia": "11",
+	"IDCCAA": "01",
+	"Municipio": "Trebujena",
+	"Provincia": "CÁDIZ",
+	"CCAA": "Andalucia"
+  },
+  {
+	"IDMunicipio": "1801",
+	"IDProvincia": "11",
+	"IDCCAA": "01",
+	"Municipio": "Ubrique",
+	"Provincia": "CÁDIZ",
+	"CCAA": "Andalucia"
+  },
+  {
+	"IDMunicipio": "8111",
+	"IDProvincia": "52",
+	"IDCCAA": "19",
+	"Municipio": "Melilla",
+	"Provincia": "MELILLA",
+	"CCAA": "Melilla"
+  },
+  {
+	"IDMunicipio": "8112",
+	"IDProvincia": "38",
+	"IDCCAA": "05",
+	"Municipio": "Pinar de El Hierro, El",
+	"Provincia": "SANTA CRUZ DE TENERIFE",
+	"CCAA": "Canarias"
+  }
+]
