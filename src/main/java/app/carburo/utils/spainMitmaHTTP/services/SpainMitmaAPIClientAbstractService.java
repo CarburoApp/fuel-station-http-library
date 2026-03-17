@@ -44,7 +44,7 @@ public abstract class SpainMitmaAPIClientAbstractService {
 	private final PropertyLoader propertyLoader;
 	private final Gson gson;
 
-	public SpainMitmaAPIClientAbstractService() {
+	protected SpainMitmaAPIClientAbstractService() {
 		//Inicialización de los archivos de propiedades
 		this.propertyLoader = PropertyLoader.getInstance();
 
